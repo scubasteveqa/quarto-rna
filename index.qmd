@@ -4,11 +4,11 @@ title: "Displaying Table from PostgreSQL Database in Quarto"
 
 Here's how you can display a table from a PostgreSQL database in a Quarto document:
 
-```{python}
+```
+{python}
 import pyodbc
 import pandas as pd
 import os
-```
 
 # Retrieve environment variables directly
 driver = os.environ.get('DB_DRIVER')
