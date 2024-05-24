@@ -36,4 +36,3 @@ df = pd.DataFrame(rows, columns=[column[0] for column in conn.cursor().descripti
 
 # Display the DataFrame
 df
-```
