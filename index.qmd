@@ -5,11 +5,11 @@ editor: visual
 jupyter: python3
 ---
 
-Here's how you can display a table from a PostgreSQL database in a Quarto document:
-
+```python
 import pyodbc
 import pandas as pd
 import os
+```
 
 ```python
 # Retrieve environment variables directly
