@@ -1,5 +1,8 @@
 ---
 title: "Displaying Table from PostgreSQL Database in Quarto"
+format: html
+editor: visual
+jupyter: python3
 ---
 
 Here's how you can display a table from a PostgreSQL database in a Quarto document:
@@ -34,4 +37,4 @@ df = pd.DataFrame(rows, columns=[column[0] for column in conn.cursor().descripti
 
 # Display the DataFrame
 df
-
+```
