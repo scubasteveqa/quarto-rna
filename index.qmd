@@ -8,6 +8,7 @@ Here's how you can display a table from a PostgreSQL database in a Quarto docume
 import pyodbc
 import pandas as pd
 import os
+```
 
 # Retrieve environment variables directly
 driver = os.environ.get('DB_DRIVER')
