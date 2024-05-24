@@ -22,7 +22,9 @@ port = os.environ.get('DB_PORT')
 # Create the connection string for pyodbc
 ```{python}
 connection_string = f"DRIVER={{{driver}}};DATABASE={database};UID={uid};PWD={pwd};SERVER={server};PORT={port}"
+```
 
+```{python}
 # Connect to PostgreSQL database
 conn = pyodbc.connect(connection_string)
 ```
@@ -30,13 +32,19 @@ conn = pyodbc.connect(connection_string)
 ```{python}
 # Execute a query
 query = "SELECT * FROM auth_permission"
+```
 
+```{python}
 #Fetch all rows from the result
 rows = conn.cursor().execute(query).fetchall()
+```
 
+```{python}
 # Create a DataFrame from the fetched data
 df = pd.DataFrame(rows, columns=[column[0] for column in conn.cursor().description])
+```
 
+```{python}
 # Display the DataFrame
 df
 ```
