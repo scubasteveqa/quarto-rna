@@ -7,7 +7,7 @@ jupyter: python3
 
 Here's how you can display a table from a PostgreSQL database in a Quarto document:
 
-```{python}
+```python
 import pyodbc
 import pandas as pd
 import os
@@ -37,4 +37,3 @@ df = pd.DataFrame(rows, columns=[column[0] for column in conn.cursor().descripti
 
 # Display the DataFrame
 df
-```
