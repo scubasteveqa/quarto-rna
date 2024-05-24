@@ -21,6 +21,7 @@ con = pyodbc.connect(
     port=5432
 )
 ```
+
 ```{python}
 # Retrieve a table from the database
 query = "SELECT * FROM auth_permission"
